@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Page - FCC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div class="container">
+        <p id="description">A small form just so we get to know more about you.</p>
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="name" id="name-label">Name <span>*</span> :</label>
+                </div>
+                <div class="rightTab">
+                    <input class="input-field" type="text" id="name" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="email" id="email-label">Email <span>*</span> :</label>
+                </div>
+                <div class="rightTab">
+                    <input class="input-field" type="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="age" id="number-label">Age <span>*</span> :</label>
+                </div>
+                <div class="rightTab">
+                    <input class="input-field" id="number" type="number" min="16" max="150" placeholder="Age" id="age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="dropdown">What best describes your current role?</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown">
+                        <option value="" disabled>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="ftj">Full Time Job</option>
+                        <option value="ftl">Full Time Learner</option>
+                        <option value="pnts">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="radio">How likely are you to recommend this university to friends? <span>*</span></label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>
+                                Definetly
+                                <input type="radio" name="radio-buttons" value="1">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Maybe
+                                <input type="radio" name="radio-buttons" value="2">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Not Sure
+                                <input type="radio" name="radio-buttons" value="3">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="chkbx">What degree are you taking?</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="check">
+                            <label>
+                                Mathematics
+                                <input type="checkbox" name="degree" value="1">
+                            </label>
+                        </li>
+                        <li class="check">
+                            <label>
+                                Computer Science
+                                <input type="checkbox" name="degree" value="2">
+                            </label>
+                        </li>
+                        <li class="check">
+                            <label>
+                                Biotechnology
+                                <input type="checkbox" name="degree" value="3">
+                            </label>
+                        </li>
+                        <li class="check">
+                            <label>
+                                Physics
+                                <input type="checkbox" name="degree" value="4">
+                            </label>
+                        </li>
+                        <li class="check">
+                            <label>
+                                Other
+                                <input type="checkbox" name="degree" value="5">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <textarea id="sugestions" cols="30" rowTabs="10" placeholder="Any suggestion..."></textarea>
+            </div>
+            <div class="rowTab">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

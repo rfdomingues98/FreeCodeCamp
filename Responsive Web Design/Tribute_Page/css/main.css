@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400|Rubik:700");
+
+#main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #3f3f3f;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  background: #2f2f2f;
+}
+
+#image {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  width: 20%;
+  border: 5px solid #fff;
+  border-radius: 3px;
+}
+
+#title {
+  padding-top: 2vh;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 3vw;
+  margin: 0;
+}
+
+#quote {
+  font-size: 1.2rem;
+}
+
+#quote q {
+  font-style: italic;
+}
+
+#img-caption {
+  font-size: 1.2rem;
+  padding-bottom: 2vh;
+}
+
+#tribute-info {
+  text-align: justify;
+  margin: 0 auto;
+  width: 60%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+#tribute-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: #2f2f2f;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 35px;
+  width: 10%;
+}

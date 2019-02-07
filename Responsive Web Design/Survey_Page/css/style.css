@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+body,
+html {
+  background-color: #a3d5ef;
+  min-width: 320px;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+span {
+  color: red;
+}
+
+.container {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.rightTab {
+  width: 48%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+}
+
+.input-field {
+  height: 20px;
+  border: 1px solid #c0c0c0;
+  width: 280px;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 5px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  float: left;
+  margin-top: 5px;
+}
+
+#dropdown {
+  height: 35px;
+  width: 150px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio,
+.check {
+  display: block;
+  position: relative;
+  left: -45px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+#sugestions {
+  min-width: 350px;
+  min-height: 150px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  max-width: 500px;
+  max-height: 250px;
+}
+
+#submit {
+  background-color: #59ace0;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px solid;
+  height: 40px;
+  width: 96px;
+  font-size: 1em;
+  margin: 10px;
+}
