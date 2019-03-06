@@ -189,7 +189,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   #navbar {
-    position: absolute;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -208,9 +208,19 @@ footer {
   #projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #projects .project-tile .learn {
+    float: none;
   }
   #contacts .icon {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project-tile img {
+    width: 97%;
   }
 }
 /*# sourceMappingURL=main.css.map */

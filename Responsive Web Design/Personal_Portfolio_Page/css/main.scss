@@ -143,7 +143,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     #navbar {
-        position: absolute;
+        position: relative;
         flex-direction: column;
         a {
             font-size: 1rem;
@@ -160,10 +160,24 @@ footer {
     }
     #projects {
         grid-template-columns: 1fr;
+        text-align: center;
+        .project-tile {
+            .learn {
+                float: none;
+            }
+        }
     }
     #contacts {
         .icon {
             font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-tile {
+        img {
+            width: 97%;
         }
     }
 }
