@@ -1,0 +1,114 @@
+$font-color: #e6e8e6;
+$bg-color: lighten(#080708, 5);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: $font-color;
+    font-family: 'Open sans', Arial, sans-serif;
+    line-height: 1.5;
+    min-width: 300px;
+    background-color: $bg-color;
+}
+
+#navbar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid lighten($font-color, 0);
+    top: 0;
+    left: 0;
+    header {
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+    .nav-link {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: $font-color;
+        border-top: 1px solid $font-color;
+        &:hover {
+            transition: ease-in .3s;
+            background-color: #3772ff;
+        }
+    }
+    ul {
+        height: 88%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+#main-doc {
+    width: 79%;
+    position: absolute;
+    margin-left: calc(20% + 20px);
+    padding: 20px;
+}
+
+.main-section {
+    article {
+        margin: 20px;
+    }
+    li {
+        margin: 20px 0 0 25px;
+    }
+}
+
+header {
+    color: $font-color;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 10px;
+}
+
+code {
+    transition: background 0.2s ease-in-out;
+    background: darken($bg-color, 2);
+    color: #fdca40;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    display: block;
+    margin: 10px;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    white-space: pre;
+    &:hover {
+        background-color: darken($bg-color, 3);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 275px;
+    }
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 275px;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}

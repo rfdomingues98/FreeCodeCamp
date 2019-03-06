@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i|Rubik:400,500,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  background: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 0;
+  width: 100vw;
+}
+
+#navbar a {
+  margin-right: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+  font-size: 1.2rem;
+  float: right;
+  padding: 15px 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#navbar a:hover {
+  color: #fff;
+}
+
+#welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://efactory.missouristate.edu/wp-content/uploads/2016/06/photo-1454165205744-3b78555e5572.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://efactory.missouristate.edu/wp-content/uploads/2016/06/photo-1454165205744-3b78555e5572.jpg");
+  background-size: cover;
+}
+
+#welcome-section h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 3.5rem;
+}
+
+#welcome-section h2 {
+  font-size: 1rem;
+}
+
+#projects {
+  background: #100F12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+#projects h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 50px 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+}
+
+#projects .project-tile {
+  margin: 25px;
+  font-size: .8rem;
+}
+
+#projects .project-tile .learn {
+  position: relative;
+  margin: 10px 0;
+  float: right;
+}
+
+#projects .btn {
+  -webkit-transition: .3s background linear;
+  transition: .3s background linear;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  padding: 10px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+#projects .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#projects > a {
+  grid-column: 1 / -1;
+}
+
+#projects > a .more {
+  font-size: 1.1rem;
+  margin: 25px;
+}
+
+#contacts {
+  background: #202020;
+}
+
+#contacts h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+}
+
+#contacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contacts .icon {
+  -webkit-transition: .3s color linear;
+  transition: .3s color linear;
+  margin: 50px;
+  font-size: 2rem;
+}
+
+#contacts .icon:hover {
+  color: #fff;
+}
+
+footer {
+  background: #100F12;
+  text-align: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  #projects {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar a {
+    font-size: 1rem;
+    margin-right: 25px;
+  }
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  #welcome-section h2 {
+    font-size: 1rem;
+  }
+  #projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #contacts .icon {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

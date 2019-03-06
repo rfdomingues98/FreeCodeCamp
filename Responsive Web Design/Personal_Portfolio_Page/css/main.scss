@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i|Rubik:400,500,700');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+
+li {
+    list-style: none;
+}
+
+#navbar {
+    background: #141414;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    width: 100vw;
+    a {
+        margin-right: 50px;
+        transition: .5s;
+        text-align: center;
+        font-size: 1.2rem;
+        float: right;
+        padding: 15px 20px;
+        align-items: flex-end;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+#welcome-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://efactory.missouristate.edu/wp-content/uploads/2016/06/photo-1454165205744-3b78555e5572.jpg");
+    background-size: cover;
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        margin: 20px;
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+#projects {
+    background: #100F12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin: 50px 0;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.8rem;
+    }
+    .project-tile {
+        margin: 25px;
+        font-size: .8rem;
+        .learn {
+            position: relative;
+            margin: 10px 0;
+            float: right;
+        }
+    }
+    .btn {
+        transition: .3s background linear;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background: none;
+        color: #fff;
+        padding: 10px;
+        font-size: .8rem;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        cursor: pointer;
+    }
+    &>a {
+        grid-column: 1 / -1;
+        .more {
+            font-size: 1.1rem;
+            margin: 25px;
+        }
+    }
+}
+
+#contacts {
+    background: #202020;
+    h1 {
+        padding-top: 50px;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.8rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .icon {
+        transition: .3s color linear;
+        margin: 50px;
+        font-size: 2rem;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+footer {
+    background: #100F12;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #navbar {
+        position: absolute;
+        flex-direction: column;
+        a {
+            font-size: 1rem;
+            margin-right: 25px;
+        }
+    }
+    #welcome-section {
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+    }
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    #contacts {
+        .icon {
+            font-size: 1.3rem;
+        }
+    }
+}
