@@ -95,11 +95,11 @@ li {
         }
         cursor: pointer;
     }
-    &>a {
+    &>.btn {
         grid-column: 1 / -1;
+        margin: 50px;
         .more {
             font-size: 1.1rem;
-            margin: 25px;
         }
     }
 }

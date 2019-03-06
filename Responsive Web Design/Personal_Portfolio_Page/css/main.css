@@ -125,13 +125,13 @@ li {
   color: #000;
 }
 
-#projects > a {
+#projects > .btn {
   grid-column: 1 / -1;
+  margin: 50px;
 }
 
-#projects > a .more {
+#projects > .btn .more {
   font-size: 1.1rem;
-  margin: 25px;
 }
 
 #contacts {
