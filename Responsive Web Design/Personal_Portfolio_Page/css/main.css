@@ -45,7 +45,7 @@ li {
   transition: .5s;
   text-align: center;
   font-size: 1.2rem;
-  float: right;
+  float: left;
   padding: 15px 20px;
   -webkit-box-align: end;
       -ms-flex-align: end;
