@@ -212,14 +212,15 @@ footer {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
     justify-items: end;
-    width: 20px;
+    width: 80%;
     top: -3px;
-    left: 200px;
   }
   .hamburger div {
     background-color: #d1d1d1;
     position: relative;
     border-radius: 3px;
+    -ms-grid-column-align: end;
+        justify-self: end;
     width: 30px;
     height: 4px;
     margin-top: 5px;
@@ -244,7 +245,7 @@ footer {
     transform: scale(0);
   }
   #toggle:checked ~ .menu {
-    height: 300px;
+    height: 205px;
   }
   .menu {
     width: 100%;
@@ -254,7 +255,6 @@ footer {
     display: grid;
     -ms-grid-rows: 1fr (0.5fr)[4];
         grid-template-rows: 1fr repeat(4, 0.5fr);
-    grid-row-gap: 25px;
     padding: 0;
     list-style: none;
     clear: both;
